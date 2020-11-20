@@ -1,12 +1,11 @@
 {
     "name": "gihan/invisible-captcha",
-    "description": "Invisible reCAPTCHA For Laravel. Forked albertcht/invisible-recaptcha which is abandoned",
-    "keywords": ["recaptcha", "no-captcha", "captcha", "invisible", "invisible-recaptcha", "laravel", "laravel5", "php"],
+    "description": "Invisible reCAPTCHA For Laravel (Including 8). Forked albertcht/invisible-recaptcha which is abandoned",
+    "keywords": ["recaptcha", "no-captcha", "captcha", "invisible", "invisible-recaptcha", "laravel", "laravel5","laravel6","laravel7","laravel8", "php"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Albert Chen",
-            "homepage": "https://www.albert-chen.com"
+            "name": "Gihan Fonseka" 
         }
     ],
     "require": {
