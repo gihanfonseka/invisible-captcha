@@ -1,6 +1,6 @@
 {
-    "name": "albertcht/invisible-recaptcha",
-    "description": "Invisible reCAPTCHA For Laravel.",
+    "name": "gihan/invisible-recaptcha",
+    "description": "Invisible reCAPTCHA For Laravel. Forked albertcht/invisible-recaptcha which is abandoned",
     "keywords": ["recaptcha", "no-captcha", "captcha", "invisible", "invisible-recaptcha", "laravel", "laravel5", "php"],
     "license": "MIT",
     "authors": [

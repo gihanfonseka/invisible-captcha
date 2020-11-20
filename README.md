@@ -262,6 +262,7 @@ This repo demonstrates how to use this package with ajax way.
 
 ## Credits 
 
+* https://github.com/albertcht/invisible-recaptcha - original library
 * anhskohbo (the author of no-captcha package)
 * [Contributors](https://github.com/albertcht/invisible-recaptcha/graphs/contributors)
 
