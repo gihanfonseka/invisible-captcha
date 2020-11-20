@@ -28,5 +28,6 @@
                 "AlbertCht\\InvisibleReCaptcha\\InvisibleReCaptchaServiceProvider"
             ]
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
