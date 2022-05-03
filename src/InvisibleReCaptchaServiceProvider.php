@@ -15,8 +15,8 @@ class InvisibleReCaptchaServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->bootConfig();
-        $this->app['validator']->extend('captcha', function ($attribute, $value) {
-            return $this->app['captcha']->verifyResponse($value, $this->app['request']->getClientIp());
+        $this->app['validator']->extend('invisiblerecaptcha', function ($attribute, $value) {
+            return $this->app['invisiblerecaptcha']->verifyResponse($value, $this->app['request']->getClientIp());
         });
     }
 
@@ -27,7 +27,7 @@ class InvisibleReCaptchaServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('captcha', function ($app) {
+        $this->app->singleton('invisiblerecaptcha', function ($app) {
             return new InvisibleReCaptcha(
                 $app['config']['captcha.siteKey'],
                 $app['config']['captcha.secretKey'],
@@ -47,7 +47,7 @@ class InvisibleReCaptchaServiceProvider extends ServiceProvider
      */
     protected function bootConfig()
     {
-        $path = __DIR__.'/config/captcha.php';
+        $path = __DIR__ . '/config/captcha.php';
 
         $this->mergeConfigFrom($path, 'captcha');
 
@@ -63,7 +63,7 @@ class InvisibleReCaptchaServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return ['captcha'];
+        return ['invisiblerecaptcha'];
     }
 
     /**
